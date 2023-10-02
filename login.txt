@@ -1,4 +1,0 @@
-{
-  "accessToken": "string1234",
-  "refreshToken": "string"
-}
