@@ -66,7 +66,7 @@ router.get('/notifications/area/list', responseController.getResponse);
 router.patch('/notifications/main/update/is-read', responseController.getResponse);
 router.patch('/notifications/area/update/is-read', responseController.getResponse);
 router.get('/information/from-area/:id', responseController.getResponse);
-router.get('/information/list/area/:id', responseController.getResponse);
+router.get('/information/list/from-area/:id', responseController.getResponse);
 router.post('/inquiry', responseController.getResponse);
 router.get('/timeline', responseController.getResponse);
 router.get('/timeline/area/:id', responseController.getResponse);
