@@ -46,7 +46,7 @@ router.get('/sub-area/:id/is-evaluated', responseController.getResponse);
 router.post('/area/search', responseController.getResponse);
 router.get('/area/:id', responseController.getResponse);
 router.get('/area/:id/is-evaluated', responseController.getResponse);
-router.get('/area/{areaId}/facilities', responseController.getResponse);
+router.get('/area/:id/facilities', responseController.getResponse);
 router.post('/area/update-time/:id', responseController.getResponse);
 router.get('/facility/:id', responseController.getResponse);
 router.get('/comment/:id', responseController.getResponse);
