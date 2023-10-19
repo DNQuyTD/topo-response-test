@@ -13,6 +13,7 @@ router.post('/send-register-email/update/email', responseController.getResponse)
 router.patch('/update/email', responseController.getResponse);
 router.post('/route/search', responseController.getResponse);
 router.get('/route/finished', responseController.getResponse);
+router.get('/route/lose', responseController.getResponse);
 router.get('/route/list/projected', responseController.getResponse);
 router.get('/route/:id', responseController.getResponse);
 router.get('/route/:id/projected-evaluated', responseController.getResponse);
