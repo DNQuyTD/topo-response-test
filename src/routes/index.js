@@ -76,6 +76,6 @@ router.get('/timeline/subArea/:id', responseController.getResponse);
 router.get('/timeline/route/:id', responseController.getResponse);
 router.get('/timeline/user/:id', responseController.getResponse);
 router.post('/area/:id/check-in', responseController.getResponse);
-router.get('/cbda', responseController.getResponse);
+router.get('/route/graph/finished-and-lose/user/:id', responseController.getResponse);
 router.get('/merchandise/list/purchased/subArea/:id', responseController.getResponse);
 module.exports = router;
