@@ -78,5 +78,5 @@ router.get('/timeline/user/:id', responseController.getResponse);
 router.post('/area/:id/check-in', responseController.getResponse);
 router.get('/route/graph/finished-and-lose/user/:id', responseController.getResponse);
 router.get('/merchandise/list/purchased/subArea/:id', responseController.getResponse);
-router.get('/route/record/summary/:id', responseController.getResponse);
+router.get('/route/:id/record/summary', responseController.getResponse);
 module.exports = router;
