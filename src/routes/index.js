@@ -64,6 +64,9 @@ router.post('/follow/:id', responseController.getResponse);
 router.delete('/follow/:id', responseController.getResponse);
 router.get('/notifications/main/list', responseController.getResponse);
 router.get('/notifications/area/list', responseController.getResponse);
+//Update 2 apis
+router.get('/notification/main/list', responseController.getResponse);
+router.get('/notification/area/list', responseController.getResponse);
 router.patch('/notifications/main/update/is-read', responseController.getResponse);
 router.patch('/notifications/area/update/is-read', responseController.getResponse);
 router.get('/information/from-area/:id', responseController.getResponse);
@@ -79,4 +82,6 @@ router.post('/area/:id/check-in', responseController.getResponse);
 router.get('/route/graph/finished-and-lose/user/:id', responseController.getResponse);
 router.get('/merchandise/list/purchased/subArea/:id', responseController.getResponse);
 router.get('/route/:id/record/summary', responseController.getResponse);
+router.post('/route/:id/project', responseController.getResponse);
+router.delete('/route/:id/project', responseController.getResponse);
 module.exports = router;
