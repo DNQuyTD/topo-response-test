@@ -61,7 +61,7 @@ class ResponseController {
             */
             var path = req.path.replace(req.params['id'], '0')
             path = path.replace(req.params['id1'], '0')
-            console.log(`[P]::getOneByPath::`, response.httpCode);
+            console.log(`[P]::getOneByPath::`, 'response.httpCode');
             const response = await ResponseService.getOne({ path, method: req.method.toLowerCase() })
             console.log(`[P]::getOneByPath::`, response.httpCode);
             return res.status(response.httpCode).json(
