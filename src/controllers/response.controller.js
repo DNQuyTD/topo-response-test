@@ -59,8 +59,8 @@ class ResponseController {
                 200 OK
                 201 CREATED
             */
-            const path = req.path.replace(req.params['id'], '0')
-            const path = path.replace(req.params['ida'], '0')
+            var path = req.path.replace(req.params['id'], '0')
+            path = path.replace(req.params['id1'], '0')
             const response = await ResponseService.getOne({ path, method: req.method.toLowerCase() })
             return res.status(response.httpCode).json(
                 JSON.parse(response.response)
