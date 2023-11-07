@@ -61,9 +61,7 @@ class ResponseController {
             */
             var path = req.path.replace(req.params['id'], '0')
             path = path.replace(req.params['id1'], '0')
-            console.log(`[P]::getOneByPath::`, 'response.httpCode');
             const response = await ResponseService.getOne({ path, method: req.method.toLowerCase() })
-            console.log(`[P]::getOneByPath::`, response.httpCode);
             if (response.httpCode == '204') {
                 return res.status(204).send();
             } else {
