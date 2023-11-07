@@ -85,4 +85,5 @@ router.get('/route/:id/record/summary', responseController.getResponse);
 router.post('/route/:id/project', responseController.getResponse);
 router.delete('/route/:id/project', responseController.getResponse);
 router.get('/merchandise/list/purchased/route/:id', responseController.getResponse);
+router.get('/area/download/:id/merchandise/:id', responseController.getResponse);
 module.exports = router;
