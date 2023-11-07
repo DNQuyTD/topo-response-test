@@ -65,7 +65,7 @@ class ResponseController {
             const response = await ResponseService.getOne({ path, method: req.method.toLowerCase() })
             console.log(`[P]::getOneByPath::`, response.httpCode);
             if (response.httpCode == '204') {
-                return res.status(204);
+                return res.status(204).send();
             } else {
                 return res.status(response.httpCode).json(
                     JSON.parse(response.response)
