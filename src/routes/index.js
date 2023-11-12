@@ -4,7 +4,7 @@ const responseController = require('../controllers/response.controller');
 const router = express.Router();
 
 router.post('/login', responseController.getResponse);
-router.get('/refresh-token', responseController.getResponse);
+router.post('/refresh-token', responseController.getResponse);
 router.post('/send-register-email/signup', responseController.getResponse);
 router.post('/signup', responseController.getResponse);
 router.post('/send-register-email/update/password', responseController.getResponse);
