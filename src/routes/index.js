@@ -89,4 +89,5 @@ router.get('/merchandise/list/purchased/route/:id', responseController.getRespon
 router.get('/area/download/:id/merchandise/:id1', responseController.getResponse);
 router.get('/merchandise/list/purchased/area/:id', responseController.getResponse);
 router.post('/report', responseController.getResponse);
+router.get('/merchandise/list/purchased', responseController.getResponse);
 module.exports = router;
