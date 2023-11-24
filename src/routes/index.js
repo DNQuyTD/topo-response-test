@@ -50,7 +50,7 @@ router.get('/area/:id/is-evaluated', responseController.getResponse);
 router.get('/area/:id/facilities', responseController.getResponse);
 router.post('/area/update-time/:id', responseController.getResponse);
 router.get('/facility/:id', responseController.getResponse);
-router.get('/facility/search', responseController.getResponse);
+router.post('/facility/search', responseController.getResponse);
 router.get('/comment/:id', responseController.getResponse);
 router.post('/comment/create', responseController.getResponse);
 router.patch('/comment/update/:id', responseController.getResponse);
