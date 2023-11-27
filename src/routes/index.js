@@ -7,7 +7,7 @@ router.post('/login', responseController.getResponse);
 router.post('/refresh-token', responseController.getResponse);
 router.post('/send-register-email/signup', responseController.getResponse);
 router.post('/signup', responseController.getResponse);
-router.post('/send-register-email/update/password', responseController.getResponse);
+router.post('/send-register-email/reset-password', responseController.getResponse);
 router.patch('/update/password', responseController.getResponse);
 router.post('/send-register-email/update/email', responseController.getResponse);
 router.patch('/update/email', responseController.getResponse);
